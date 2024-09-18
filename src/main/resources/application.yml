@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+
+  cache:
+    type: redis
+    host: localhost
+    port: 6379
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/employee_crud
+    username: root
+    password: root
+
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
